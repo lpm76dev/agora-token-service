@@ -38,6 +38,10 @@ func main() {
 	})
 
 	api.Use(nocache())
+
+	//AllowOrigins:     []string{"*"},
+	//AllowMethods:     []string{"POST, GET, OPTIONS, PUT, DELETE"},
+
 	api.GET("rtc/:channelName/:role/:tokentype/:uid/", getRtcToken)
 	api.GET("rtm/:uid/", getRtmToken)
 	api.GET("rte/:channelName/:role/:tokentype/:uid/", getBothTokens)
