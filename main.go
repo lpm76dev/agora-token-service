@@ -16,8 +16,8 @@ var appID string
 var appCertificate string
 
 func main() {
-	//os.Setenv("APP_ID", "daa8be0ae8c7458abefc1ef6f406065e")
-	//os.Setenv("APP_CERTIFICATE", "995550f944a34416853891ed9e2633e4")
+	os.Setenv("APP_ID", "daa8be0ae8c7458abefc1ef6f406065e")
+	os.Setenv("APP_CERTIFICATE", "995550f944a34416853891ed9e2633e4")
 
 	appIDEnv, appIDExists := os.LookupEnv("APP_ID")
 	appCertEnv, appCertExists := os.LookupEnv("APP_CERTIFICATE")
